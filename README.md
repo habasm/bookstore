@@ -1,4 +1,12 @@
 <a name="readme-top"></a>
+<!-- <div align="center">
+
+  <img src="/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Microverse</b></h3>
+
+</div> -->
 <div align="left">
   <h1>The Bookstore CMS</h1>
 
@@ -16,6 +24,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+      - [🔭 Future Features ](#-future-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
@@ -79,6 +88,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- Future Features -->
+
+#### 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Use redux in React**
+- [ ] **Connect to API**
+- [ ] **App Stling**
 
 
 <!-- LIVE DEMO -->
@@ -153,9 +169,9 @@ To to build for the production, execute the following command:
 
 👤 **HABASM**
 
-- GitHub: [@WHABASM](https://github.com/Habasm)
-- Twitter: [@HABASM](https://twitter.com/habasm)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/habasm)
+- GitHub: [@habasm](https://github.com/HABASM)
+- Twitter: [@AsimareHabitamu](https://twitter.com/AsimareHabitamu)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/habitamu-asimare-aa824b169)
 
 
 
