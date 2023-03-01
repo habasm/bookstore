@@ -40,10 +40,6 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 The Bookstore CMS <a name="about-project"></a>
-
->The "Bookstore" is a React-based SPA that allows you to: Display a list of books, Add a book, and Remove a selected book.
-
 **The Bookstore CMS*
 
 ## 🛠 Built With <a name="built-with"></a>
