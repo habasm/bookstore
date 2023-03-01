@@ -1,20 +1,4 @@
 <a name="readme-top"></a>
-<!-- <div align="center">
-
-  <img src="/murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse</b></h3>
-
-</div> -->
-<div align="left">
-  <h1>The Bookstore CMS</h1>
-
-
-> The "Bookstore" is a React-based SPA that allows you to: Display a list of books, Add a book, and Remove a selected book.
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -39,6 +23,10 @@
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
+
+# 📖 The Bookstore CMS <a name="about-project"></a>
+
+>The "Bookstore" is a React-based SPA that allows you to: Display a list of books, Add a book, and Remove a selected book.
 
 **The Bookstore CMS*
 
