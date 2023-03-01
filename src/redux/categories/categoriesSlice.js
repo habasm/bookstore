@@ -1,27 +1,25 @@
+/* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   categories: [],
+  checkStatus: '',
 };
 
-const categoriesSlice = createSlice({
+export const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   reducers: {
-    checkStatus: (state) => {
-      if (state.categories.length === 0) {
-        return {
-          ...state,
-          categories: [...state.categories, 'Under Construction'],
-        };
-      }
-      return {
-        ...state,
-        categories: state.categories,
-      };
+    status: (state) => {
+      state.checkStatus = 'Under Construction';
+    },
+    add: () => {
+
     },
   },
 });
 
-export const { checkStatus } = categoriesSlice.actions;
+// Action creators are generated for each case reducer function
+export const { status, add } = categoriesSlice.actions;
+
 export default categoriesSlice.reducer;
