@@ -3,12 +3,12 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Books from './components/books';
 import Categories from './components/categories';
-import navbar from './components/navbar';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <>
-      <navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Books />} />
         <Route path="/books" element={<Books />} />

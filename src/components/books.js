@@ -1,16 +1,16 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import book from './book';
-import form from './form';
+import Book from './Book';
+import Form from './Form';
 
 function Books() {
   const { books } = useSelector((state) => state.books);
   return (
     <div className="container">
       {books.map((book) => (
-        <book key={book.id} title={book.title} author={book.author} id={book.id} />
+        <Book key={book.id} title={book.title} author={book.author} id={book.id} />
       ))}
-      <form />
+      <Form />
     </div>
   );
 }
