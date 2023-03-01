@@ -1,35 +1,20 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import {
-  BrowserRouter as Router, Routes, Route,
-} from 'react-router-dom';
+import React from 'react';
 import './App.css';
-import BooksContainer from './components/Books/BooksContainer';
-import Categories from './components/Categories/Categories';
-import Navbar from './components/Navbar/Navbar';
-import store from './redux/configureStore';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from './components/Navbar';
+import Books from './components/books';
+import Categories from './components/categories';
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <>
-        <Provider store={store}>
-          <Router>
-            <Navbar />
-            <Routes>
-              <Route path="/" element={(<BooksContainer />)} />
-              <Route path="/Categories" element={(<Categories />)} />
-            </Routes>
-          </Router>
-        </Provider>
-      </>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;
