@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBooks } from '../redux/books/booksSlice';
-import Book from './book';
-import Form from './form';
+import Book from './Book';
+import Form from './Form';
 
 function Books() {
   const dispatch = useDispatch();
