@@ -9,7 +9,6 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
       - [🔭 Future Features ](#-future-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Setup](#setup)
     - [Install](#install)
@@ -80,12 +79,6 @@
 - [ ] **Connect to API**
 - [ ] **App Stling**
 
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- <a href="#" target="_blank">Live Demo Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
