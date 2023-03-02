@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -48,13 +47,13 @@ export const booksSlice = createSlice({
       state.books.push(action.payload);
     },
     remove: (state, action) => {
-      state.books = state.books.filter((book) => book.item_id !== action.payload);
+      const books = state.books.filter((book) => book.item_id !== action.payload);
+      return { ...state, books };
     },
   },
   extraReducers: (builder) => {
     builder
       .addCase(fetchBooks.fulfilled, (state, action) => {
-        state.status = 'succeded';
         const liveBooks = action.payload;
         const booksStore = [];
         Object.keys(liveBooks).map((id) => (
@@ -67,22 +66,20 @@ export const booksSlice = createSlice({
             },
           )
         ));
-        state.books = booksStore;
+        return { ...state, books: booksStore, status: 'succeeded' };
       })
       .addCase(fetchBooks.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.error.message;
+        const status = 'failed';
+        const error = action.error.message;
+        return { ...state, status, error };
       })
-      .addCase(addBooks.fulfilled, async (state) => {
-        state.status = 'bookadded';
-      })
+      .addCase(addBooks.fulfilled, async (state) => ({ ...state, status: 'succeeded' }))
       .addCase(addBooks.rejected, (state, action) => {
-        state.status = 'failed';
-        state.error = action.error.message;
+        const status = 'failed';
+        const error = action.error.message;
+        return { ...state, status, error };
       })
-      .addCase(removeBook.fulfilled, (state) => {
-        state.status = 'succeeded';
-      });
+      .addCase(removeBook.fulfilled, (state) => ({ ...state, status: 'succeeded' }));
   },
 });
 
